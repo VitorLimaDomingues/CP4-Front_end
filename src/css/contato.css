@@ -11,27 +11,29 @@ html, body {
     flex-direction: column;
 }
 
-header {
+.header_container {
     display: flex;
-    height: 97px;
-    background: #afeece;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0px 20px;
+    height: 100px;
+    background-color: #AFEECE;
 }
 
-.imagem1 {
-    width: 45px 45px;
+#menu_icon {
+    width: 45px;
+    height: 45px;
 }
 
-.imagem2 {
+#logo_icon {
     width: 157px;
+    height: 157px;
 }
 
-.imagem3 {
-    width: 45px 45px;
+#carrinho_icon{
+    width: 45px;
+    height: 45px; 
 }
-
 h2 {
     text-align: center;
 }

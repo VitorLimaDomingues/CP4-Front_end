@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px;
+      height: 100px;
+      background-color: #AFEECE;
+  }
+  
+  #menu_icon {
+      width: 45px;
+      height: 45px;
+  }
+  
+  #logo_icon {
+      width: 157px;
+      height: 157px;
+  }
+  
+  #carrinho_icon{
+      width: 45px;
+      height: 45px; 
+  }
+  
+  .carousel-inner img {
+      height: 300px; 
+      object-fit: cover; 
+  }
+  h1.titulo{
+      display: flex;
+      justify-content: center;
+      font-style: italic;
+  }
+  h2.titulo{
+      display: flex;
+      justify-content: center;
+  
+  }
+  p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      max-width: 900px;
+      margin: auto;
+      padding: 10px;
+  }
