@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chamando o CSS externo -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/contato.css">
+    <title>CP4 Front-End</title>
+</head>
+<body>
+
+<header>
+    <button id="menu-toggle">
+        <img src="src/assets/menu.png" alt="">
+    </button>
+    
+    <img class="imagem2 img-fluid" src="src/assets/logo.png" alt="">
+          
+    <img class="imagem3 img-fluid" src="src/assets/carrinho.png" alt="">
+
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<main class="container-fluid">
+    <div class="container mt-5">
+        <h2>Formulário de Contato</h2>
+        <form id="formularioContato">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+    
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+            </div>
+    
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" class="form-control" id="assunto" placeholder="Assunto">
+            </div>
+    
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        
+        <div id="resultado" style="display: none;">
+            <h4>Mensagem Enviada com Sucesso!</h4>
+            <p><strong>Nome:</strong> <span id="resultadoNome"></span></p>
+            <p><strong>E-mail:</strong> <span id="resultadoEmail"></span></p>
+            <p><strong>Assunto:</strong> <span id="resultadoAssunto"></span></p>
+            <p><strong>Mensagem:</strong> <span id="resultadoMensagem"></span></p>
+        </div>
+
+    </div>
+</main>
+
+<footer class="mt-auto">
+    <section>
+        <div class="instagram">
+            <img class="img-fluid" src="src/assets/image 9.png" alt="" onclick="instagram()">
+        </div>
+        
+        <div class="facebook">
+            <img class="img-fluid" src="src/assets/image 10.png" alt="" onclick="facebook()">
+        </div>
+        
+        <div class="whatsapp">
+            <img class="img-fluid" src="src/assets/image 11.png" alt="" onclick="whatsApp()">
+        </div>
+    </section>
+
+    <section class="link">
+        <ul>
+            <li>Política de Privacidade</li>
+            <li>Política de Trocas e Devoluções</li>
+            <li>Política de Pagamento</li>
+            <li>Termos de Serviço</li>
+        </ul>
+    </section>
+
+</footer>
+    
+    <!-- Chamando o JavaScript externo -->
+    <script src="src/js/contato.js"></script>
+</body>
+</html>

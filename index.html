@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chamando o CSS externo -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>EcoTrend</title>
+</head>
+<body>
+
+    <header>
+        <div class="header_container">
+            <button id="menu-toggle">
+                <img src="src/assets/menu.png" alt="">
+            </button>
+            <img id="logo_icon" src="./src/assets/logo.PNG" alt="Logo">
+            <img id="carrinho_icon"  src="./src/assets/carrinho.png" alt="Carrinho">
+        </div>
+        <nav id="menu" class="menu">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+    </header>
+
+
+    <main>    
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExample" data-slide-to="1"></li>
+                <li data-target="#carouselExample" data-slide-to="2"></li>
+                <li data-target="#carouselExample" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./src/assets/img_carrossel1.jpg" class="d-block w-100  img-fluid" alt="Imagem 1" loading="lazy">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/assets/img_carrossel2.jpg" class="d-block w-100 img-fluid" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/assets/img_carrossel3.jpg" class="d-block w-100 img-fluid" alt="Imagem 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="./src/assets/img_carrossel4.jpg" class="d-block w-100 img-fluid" alt="Imagem 4">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <div class="container my-5">
+            <h2>Categorias</h2>
+            <select id="categorySelect" class="form-control">
+                <option value="roupas">Roupas</option>
+                <option value="beleza">Produtos de Beleza</option>
+            </select>
+        </div>
+    
+        <section id="products" class="container my-5">
+            <div id="roupas" class="product-category">
+                <h3>Roupas</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="src/assets/roupa1.jpg" class="card-img-top" alt="Roupa 1">
+                            <div class="card-body">
+                                <h5 class="card-title">MACACAO JASMINE</h5>
+                                <p class="card-text">Macacão Jasmine estiloso e fresco, feito de algodão 100% orgânico e tingido com métodos sustentáveis. Design moderno com detalhe transpassado. Tecido biodegradável que não forma bolinhas.</p>
+                                <p class="card-text"><strong>R$ 199,90</strong></p>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="src/assets/roupa2.jpg" class="card-img-top" alt="Roupa 2">
+                            <div class="card-body">
+                                <h5 class="card-title">CAMISETA PIMA FEMININA</h5>
+                                <p class="card-text">Com essa camiseta, você terá um look moderno e cheio de estilo! Seu tom neutro permite diversas combinações e os recortes dão um toque diferenciado à peça. Ideal para mulheres que buscam conforto e sofisticação em uma única camiseta.</p>
+                                <p class="card-text"><strong>R$ 129,90</strong></p>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="src/assets/roupa3.jpg" class="card-img-top" alt="Roupa 3">
+                            <div class="card-body">
+                                <h5 class="card-title">CAMISA JAMBO OFF WHITE</h5>
+                                <p class="card-text">A Camisa Manga Curta Jambo Branca Off White combina sofisticação e leveza em uma peça essencial para qualquer guarda-roupa. Feita com 70% viscose  e 30% linho, oferece um toque suave e um caimento impecável. Seu design clean é realçado pelo bolso amplo e pelo revel duplo, que oculta os botões, garantindo um visual minimalista e elegante.</p>
+                                <p class="card-text"><strong>R$ 149,90</strong></p>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="beleza" class="product-category" style="display: none;">
+                <h3>Produtos de Beleza</h3>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="src/assets/beleza1.jpg" class="card-img-top" alt="Beleza 1">
+                            <div class="card-body">
+                                <h5 class="card-title">SABONETE GEL FACIAL 150 ML</h5>
+                                <p class="card-text"> o Sabonete Gel Facial Bio Control Agradal promove uma limpeza completa da pele, removendo o brilho sem agredir enquanto combate o reaparecimento da oleosidade, acne e poros dilatados.</p>
+                                <p class="card-text"><strong>R$ 49,90</strong></p>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="src/assets/beleza2.jpg" class="card-img-top" alt="Beleza 2">
+                            <div class="card-body">
+                                <h5 class="card-title">DESODORANTE ALTA PROTEÇÃO PURIFICANTE</h5>
+                                <p class="card-text">Fragrância: herbal e refrescante (blend de Óleos Essenciais de Eucalipto e Menta)</p>
+                                <p class="card-text"><strong>R$ 39,90</strong></p>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="src/assets/beleza3.jpg" class="card-img-top" alt="Beleza 3">
+                            <div class="card-body">
+                                <h5 class="card-title">PRECIOSA AMAZONIA VIVA</h5>
+                                <p class="card-text">Uma fragrância fresca e exótica que combina frutas tropicais, flores e notas amadeiradas, evocando a essência da Amazônia.</p>
+                                <p class="card-text"><strong>R$ 99,90</strong></p>
+                                <a href="#" class="btn btn-success">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+        
+    </main>
+
+    <footer></footer>
+        
+
+    
+    <script src="src/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
