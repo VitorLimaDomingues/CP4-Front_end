@@ -37,3 +37,9 @@ EcoTrend/
 - **Sistema de categorias** interativo para alternar entre roupas e produtos de beleza.
 - **Cartões de produtos**, com descrição, preço e botão de compra.
 - **Rodapé** com ícones de redes sociais e possível contato.
+
+## Autores
+
+- Vitor de Lima Domingues(RM561008)
+- Giovanni Romano Provazi(RM560434)
+- João Pedro Vieira de Morais(RM560527)
