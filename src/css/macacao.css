@@ -51,3 +51,39 @@
       margin: auto;
       padding: 10px;
   }
+
+  footer {
+    height: 115px;
+    background: #afeece;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+button {
+    margin-bottom: 30px;
+}
+
+.link ul {
+    list-style: none;
+    padding: 0;
+}
+
+.link li {
+    color: #636363;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3 ease;
+}
+
+.link li:hover {
+    color: blue;
+    text-decoration: underline;
+}
